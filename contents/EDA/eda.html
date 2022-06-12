@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EDA with Python</title>
+        <link rel="stylesheet" href="../../styles.css">
+    </head>
+
+    <body>
+      <div>
+        <p><a href="../../index.html">Main Page</a></p>
+      </div>
+        
+        <div class="edaabout">
+         <div>
+             <h2>EDA with Python</h2>
+             
+         </div>
+        
+        </div>
+        <div class="blackground">
+         <h3 class="h3black">What is tabular data?</h3>
+         <p>Let's say we are counting the people passing by on a road. We wonder how many blue shirted male person will pass by.
+             First person that passes has red shirt and a female. Second is green shirt and a male. The third one is blue shirted and a male.
+             We found the blue shirted male on our third try. So we've got a data already, good.Here is our dataset or we can call this tabular data.
+         </p>
+         <center><img src="df_shirt.png"></center>
+        <p>In tabular datasets we call every observation a <strong>row</strong> and every feature a <strong>column</strong> . So in this dataset we have <strong>2</strong> columns <strong>3</strong> rows.
+        It may have caught your attention that first row is starting with 0.That is the standard indexing.</p>
+        </div>
+        <div class="blackground">
+            <h3 class="h3black">Exploratory Data Analysis with Python libraries</h3>
+            <p>Python has several robust libraries as I am about to show.</p>
+            <p>Let's start with a brand new dataset.</p>
+            <p>This dataset is about a mall's customer base and their spending score.</p>
+            <p>Datasets come with several formats like .csv, .xls, .sql.This dataset has .csv format.</p>
+            <p>So first we will read dataset and transform it to pandas DataFrame format</p>
+            <center><img src="eda0.png"
+                width="500"
+                height="400"></center>
+            <p>Let's see the information about columns(or features).</p>
+            <center><img src="eda1.png"></center>
+            <p>Now let's see the distrubition of Annual Income and Age columns in our dataset.</p>
+            <center><img src="eda2.png"
+                width="500"
+                height="400"></center>
+            <p>Do we want to see the ratio of Male/Female customer as a pie chart? That's fine.</p>
+            <center><img src="eda3.png"
+                width="500"
+                height="400"></center>
+            <p>Here you see the codes above.That's not much lines of code to write.Because Python has so many open-source libraries we can see all about every column in just one line of code.The library I will use is pandas-profiling.</p>
+
+        </div>
+        <div class="container">
+          <figure>
+            <img class="image-size" src="eda4.png" />
+          </figure>
+          <figure>
+            <img class="image-size" src="eda5.png" />
+          </figure>
+        </div>
+        <div class="container">
+          <figure>
+            <img class="image-size" src="eda6.png" />
+          </figure>
+          <figure>
+            <img class="image-size" src="eda8.png" />
+          </figure>
+        </div>
+        
+
+    </body>
+</html>

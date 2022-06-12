@@ -1,0 +1,114 @@
+body{
+  background-color: rgb(182, 170, 0);
+}
+
+.about{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content:end;
+  padding: 20px;
+  margin: 40px;
+  border: 7px black;
+  border-style: outset;
+  background-color: rgba(216, 112, 147, 0.61);
+}
+
+
+.contents {
+display: flex;
+border: 5px black;
+border-style: solid;
+margin: 40px;
+
+
+}
+
+
+
+
+.contents div {
+background: peachpuff;
+border: 4px solid brown;
+height: auto;
+flex: 1 1 0%;
+}
+
+
+.contents .one{
+flex: 2 1 5%;
+}
+
+.edaabout {
+display: flex;
+margin: 40px;
+border: 5px black;
+border-style: solid;
+flex-flow: column;
+align-items:center;
+background-color: black;
+
+}
+
+.edaabout div {
+background: salmon;
+border: 4px solid brown;
+height: auto;
+}
+
+.edap {
+color: aliceblue;
+}
+
+.blackground {
+background-color: black;
+color: aliceblue;
+margin: 40px;
+}
+
+.h3black {
+color: blue;
+}
+
+.edablack {
+display: flex;
+border: 5px black;
+border-style: solid;
+margin: 40px;
+
+
+}
+
+
+
+
+.edablack div {
+background: black;
+border: 4px solid brown;
+height: auto;
+flex: 1 1 0%;
+}
+
+
+.edablack .one{
+flex: 2 1 5%;
+}
+
+
+.image-size{
+  height: 250px;
+  width: 100%;
+}
+figure{
+  width : auto;
+  height: auto;
+}
+.container{
+  display: flex;
+  background-color: black;
+  margin: 40px;
+}
+
+.hred{
+  color: red;
+}
