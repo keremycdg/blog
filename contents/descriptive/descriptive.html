@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Descriptive Statistics</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div>
+    <p><a href="../../index.html">Main Page</a></p>
+  </div>
+  <div class="edaabout">
+    <div>
+        <h2>Descriptive Statistics</h2>
+        
+    </div>
+   
+   </div>
+   <div class="blackground">
+     <h3 class="h3black">What is Descriptive Statistics?</h2>
+     <p>Descriptive statistics basically describes us the general information about given data</p>
+     <p>In descriptive analysis we can do two types of analysis.These are central tendency measurements and measures of variability</p>
+  </div>
+  <div class="blackground">
+    <h3 class="h3black">Central Tendency Measurements</h3>
+    <p>This measurements are like you can understand from the name is about the center of the data.</p>
+    <p>We frequently use three of them.<strong>Arithmetic mean</strong>,<strong>Mode</strong>,<strong>Median</strong>.</p>
+    <center><p><strong>4,6,6,7,10,11,14</strong></p></center>
+    <p>Let's calculate;</p>
+    <p><strong>Arithmetic mean:</strong> ((4+6+6+7+10+11+12)/7) = 8</p>
+    <p><strong>Mode</strong> is the most repeated values in the given data.So it is 6 in this data.</p>
+    <p><strong>Median</strong> is the middle number if we sort from smallest to largest.So it is 7 in this data.</p>
+  </div>
+  <div class="blackground">
+    <h3 class="h3black">Measures of Variability</h3>
+    <h3 class="hred">Range-Midrange and Box-plots</h3>
+    <p>Box-plots are a very effective way to visualize the range of data.We use quantiles to describe the box-plot points.
+      Range metric is the (Largest observation - Smallest observation).Mid-range is ((Largest observation+Smallest observation)/2).
+    </p>
+    <p>Let's say the median of 200 students exam grade is 72 out of 100.If we know the lowest and highest grades we can visualize it in box-plot as quantiles.
+      Let's say lowest grade is 25 and highest is 95.Let's draw a box-plot with Python's matplotlib and seaborn.
+    </p>
+    <center><img src="boxplot.png" alt=""></center>
+    <h3 class="hred">Variance and Standard Deviation</h3>
+    <p>The variance is simply about highlighting some values based on their distance to the mean.</p>
+    <p>Standard deviation is about the homogenity around arithmetic mean.</p>
+    <center><p><strong>2,3,10,15,17,20</strong></p></center>
+    <p>Let's calculate these around the data above.</p>
+    <center><img src="mean.png" alt=""
+      width="600"
+      height="150"></center>
+      <center><img src="variance.png" alt=""
+        width="600"
+        height="150"></center>
+        <center><img src="standard.png" alt=""
+          width="600"
+          height="150"></center>
+          <h3 class="hred">Population-Sample Variance</h3>
+          <p>There may be times that we don't know all about a populations data.That means we may have a sample data from given population that nearly enough to describe a population.</p>
+          <p>Let's say we have a population of people that play videogames daily.We have a sample of we know how many hours sample members plays daily.
+            If we want to estimate this <strong>populations</strong> total variance, how can we estimate from <strong>sample</strong> variance?
+        
+          </p>
+          <center><p><strong>Sample data: 0.5,2,4,5,6,6.5</strong></p></center>
+          <center><img src="samp_mean.png" alt=""
+            width="600"
+            height="150"></center>
+            <center><img src="samp_var0.png" alt=""
+              width="600"
+              height="150"></center>
+              <center><img src="samp_var1.png" alt=""
+                width="600"
+                height="150"></center>
+      
+        <p>There are two ways to estimate population variance by sample variance as you see above.
+          The reason why we should use (n-1) is because we are estimating a population metric, it can be more accurate and unbiased in most cases.
+
+        </p>
+  </div>
+  
+</body>
+</html>
+    
