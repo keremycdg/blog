@@ -1,0 +1,105 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Inferential Stats. Chapter-1)</title>
+        <link rel="stylesheet" href="../../../styles.css">
+    </head>
+
+    <body>
+      <div>
+        <p><a href="../../../index.html">Main Page</a></p>
+      </div>
+        
+        <div class="edaabout">
+         <div>
+             <h2>Introduction to Inferential Statistics</h2>
+             
+         </div>
+        
+        </div>
+        <div class="blackground">
+          <h3 class="h3black">What is Inferential Statistics?</h3>
+          <p>Inferential statistics includes the hypothes tests, estimating and predicting about data.
+            We use the samples to generalize subjects about a population the most basic form.
+            In this section we will see about distrubitions as a tool, and how distrubitions made and what types of distrubitions they are.
+          </p>
+        </div>
+        <div class="blackground">
+          <h2 class="h3black">Distrubitions
+          </h2>
+          <h3 class="hred">Binomial Distrubition</h3>
+          <p>Before diving deep to Binomial distrubitions we should update our knowledge about Binomial Coefficient calculations and probability.</p>
+          <p>Binomial Distrubitions is used when there exactly two outcomes.Like flipping a coin or a students exam grade has passed or not.
+            We know that in there are some calculations of them in probability.But how does that relation with a "distrubition"?
+            Let's see together.
+          </p>
+          <p>Let's say we are flipping a coin 7 times.What is the probability of there is no Tails?</p>
+          <center><p>We will say heads to: H and tails to: T. And number of T after 7 flips is x. </p></center>
+          <p>We are looking for P(x=0)=? right?</p>
+          <p>Than it is P(HHHHHHH)=?.</p>
+          <center><img src="inf_int0.png" alt=""></center>
+          <p>What is the probability of there is <strong>one</strong> tails?</p>
+          <p>Now in the above equation we don't need any coefficient because we calculated there is no tails.The thing is we don't care about the order of the tails.It can be at the first try or the last try.So it is called combination.
+            Binomial coefficient is the other name of combination and this is the formula.
+          </p>
+          <center><img src="inf_int1.png" alt="">
+            <p>So if we calculate all the tail probabilities for 7 flips this will be it:</p>
+          </center>
+          <center><img src="inf_int0.png" alt=""width="250"></center>
+          <center><img src="inf_int2.png" alt=""width="250"></center>
+          <center><img src="inf_int3.png" alt=""width="250"></center>
+          <center><img src="inf_int4.png" alt=""width="250"></center>
+          <center><img src="inf_int5.png" alt=""width="250"></center>
+          <center><img src="inf_int6.png" alt=""width="250"></center>
+          <center><img src="inf_int7.png" alt=""width="250"></center>
+          <center><img src="inf_int8.png" alt="" width="250"></center>
+          <p>Now these are our probabilites for each 7 flips.
+            Let's show them in a plot and make a distrubition out of this shall we?
+          </p>
+          <center><img src="binom.png" height="300"
+            width="450" alt=""></center>
+          <h2 class="hred">Poisson Distrubition</h2>
+          <p>Poisson distrubition is used to show the probability of a given event over a <strong>specific</strong> period.</p>
+          <p>Here is the formula:</p>
+          <center><img src="poisson.png" alt=""width="250"></center>
+          <center><p>e is the eulers number=2.71828</p></center>
+          <center><p>λ is the expected value</p></center>
+          <center><p>x is the value we want to see the probability.</p></center>
+          <center><p>P(X) is the probability of x.</p></center>
+          <p>So let's say there are 12 fish on <strong>average</strong> gets caught by a boat in 2 hours.What is the probability of 9 fish caught by that person over next 2 hours?</p>
+          <center><img src="poisson0.png" alt=""width="300"
+            height="150"></center>
+          <center><img src="poisson1.png" alt=""width="300"
+            height="300"></center>
+          <h3 class="hred">Gaussian Normal Distrubition</h3>
+          <p>The other two distrubitions we saw were discrete distrubitions.Gaussian Distrubition is arguably one of the most important distrubitions.This is a continuous distrubition.
+            It is one of the best fit for natural phenomenas so it is used commonly in statistics.
+            Gaussian Distrubition is mostly described as a bell curve.And it is symmetrical from center.In the center we have the mean value and you can go to each side 3 variaton.
+            So at the right wing the value is Mean+(3xStandard deviation).At the left Mean-(3xStandard deviation).We will se how to use these.
+            Here is the formula:
+          </p>
+          <center><img src="normal.png" alt=""></center>
+          <p>Here is the distrubition:
+          </p>
+          <center><img src="normal0.png" alt=""></center>
+        </div>
+        <div class="blackground">
+          <h3 class="h3black">What is Z-Table?</h3>
+          <p>Let's say we have a sample of peoples height as a Gaussian Distrubition.Our samples mean is 170cm and standar deviation is 5 cm.
+            If we want to know the percentage of people that 160 < x < 168. How we can calculate it out of Gaussian Distrubition?
+            Answer is simple, we should calcute the area under the bell curve in 160< x < 168 values.
+            Z-Table comes to help in here. Z-Table helps us standardize this area calculations.
+            Here is Z-Table and its formula:
+            <center><img src="z1.png" alt=""width="250"></center>
+            <center><img src="z-table.jpg" alt=""width="400"height="300"></center>
+            <center><p>Now let's calculate Z score for this values. Mean=170,Std.dev.=5.We want to know the probability of 164 < x < 168.</p></center>
+            <center><img src="z2.png" alt=""></center>
+            <center><img src="z164.png" alt=""></center>
+            <center><img src="z168.png" alt=""></center>
+            <center><p>If we look for Z=-0.4 and Z=-1.2 values from Z-Table we get, Z(-0.4)=.34458 and Z(-1.2)=.11507</p></center>
+            <center><p>So if we substract the values,the possibility of the magenta colored area(164 < x < 168) is .22951 as percentage the probability is %22.9 </p></center>
+            
+          </p>
+        </div>
+    </body>
+</html>
