@@ -105,8 +105,9 @@ figure{
 }
 .container{
   display: flex;
-  background-color: black;
+  background-color: whitesmoke;
   margin: 40px;
+  justify-content: space-around;
 }
 
 .hred{
