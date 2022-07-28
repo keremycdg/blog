@@ -12,8 +12,115 @@
 
         <div class="edaabout">
             <div>
-                <h2>Hyphotesis Testing and Confidence Intervals</h2>
+                <h2>Hyphothesis Testing and Confidence Intervals</h2>
             </div>
+        </div>
+
+        <div class="blackground">
+            <h2 class="h3black">What is Confidence Intervals?</h2>
+            <p>Confidence intervals are used to learn how much uncertainity there is for a parameter.It is an estimate of the interval between values. To do this estimations there are some concepts to learn first.</p>
+            <p><strong>Confidence level(1-α):</strong>The level of certainity that the range estimate includes the population parameter.For example we can say %95 or %99 etc.</p>
+            <p><strong>Significance level(α):</strong>The probability that the true value is outside the estimate range.FOr example the most commonly used is 0.05 and that equals %95 confidence level.</p>
+            <p><strong>Error margin(e):</strong>It is the largest possible distance from the estimate covered by the confidence interval.For population mean interval calculation is <strong>x̄-e < μ < x̄+e</strong> </p> 
+            <p>To calculate error(e) we will see three concepts in this section.</p>
+            <p>If;</p>
+            <p>n= number of data in chosen sample</p>
+            <p>x̄= sample mean</p>
+            <p>μ(mu)= population mean</p>
+            <p>α(alpha)= significance level</p>
+            <p>σ(sigma)= standard deviation for population</p>
+            <p>s= standard deviation for chosen sample</p>
+            <p>There are 3 formulas of error(e) for 3 seperate situations we will see in this section:</p>
+            <p>First situation; population mean interval calculation for known population variance.We will do the calculations with Z-table.</p>
+            <p>Second situation; population mean interval calculation for unknwon population variance and sample size>=30.We will do the calculations with Z-table.</p>
+            <p>Third situation; population mean interval calculation for unknwon population variance and sample size<30 .We will do the calculations with t-table.</p>
+                <center><img src="e1.png" alt=""width="150"></center>
+                <center><img src="e2.png" alt=""width="150"></center>
+                <center><img src="e3.png" alt=""width="150"></center>
+            <p>So let's start off to calculations</p>
+            <h3 class="hred">1-)Population mean interval for <strong>known</strong> population variance</h3>
+            <p>Confidence interval formula: <strong> x̄-e < μ < x̄+e </strong></p>
+            <p>Error(e) formula= <strong> Zα/2 x σ/√n</strong></p>
+            <p>So confidence interval formula is= <strong>x̄-(Zα/2 x σ/√n)< μ < x̄+(Zα/2 x σ/√n) </strong></p>
+            <p class="h3black">In a sample taken from a group of 20 people average time spent on social media is 5 hours per day.If the population standard deviation is 30 minutes per 5 hours, find the confidence intervals for;</p>
+            <p>a) %90 confidene level</p>
+            <p>b) %95 confidence level</p>
+            <p><center>_|n=20|_|x̄=5|_|σ=1/2|_|α0.1=Z0,05=1.645|_|α0.5=Z0.025=1.96|_</center></p>
+            <p>Solution a) x̄-[(Zα/2)x(σ/√n)]< μ < x̄+[(Zα/2) x (σ/√n)] ==> <strong>5-[(1.645)x(0.5/√20)] < μ < 5+[(1.645)x(0.5/√20)] </strong> </p>
+            <p><center>Confidence interval for %90 confidence level is: <strong>4.264< μ < 5.735 </strong></center></p>
+            <p>Solution b) x̄-[(Zα/2)x(σ/√n)]< μ < x̄+[(Zα/2) x (σ/√n)] ==> <strong>5-[(1.96)x(0.5/√20)] < μ < 5+[(1.96)x(0.5/√20)] </strong> </p>
+            <p><center>Confidence interval for %95 confidence level is: <strong>4.781< μ < 5.219 </strong></center></p>
+            <h3 class="hred">2.1-)Population mean interval for <strong>unknown</strong> population variance and sample size(n)=>30</h3>
+            <p>Confidence interval formula: <strong> x̄-e < μ < x̄+e </strong></p>
+            <p>Error(e) formula= <strong> Zα/2 x s/√n</strong></p>
+            <p>So confidence interval formula is= <strong>x̄-(Zα/2 x s/√n)< μ < x̄+(Zα/2 x s/√n) </strong></p>
+            <p class="h3black">In a sample taken from 45 person, average kilometers driven with a car daily is 50 kilometers.If the sample standard deviation is 10 kilometers, find the neighborhoods confidence interval for;</p>
+            <p>a) %90 confidene level</p>
+            <p>b) %95 confidence level</p>
+            <p><center>_|n=45|_|x̄=50|_|s=10|_|α0.1=Z0,05=1.645|_|α0.5=Z0.025=1.96|_</center></p>
+            <p>Solution a) x̄-[(Zα/2)x(s/√n)]< μ < x̄+[(Zα/2) x (s/√n)] ==> <strong>50-[(1.645)x(10/√45)] < μ < 50+[(1.645)x(10/√45)] </strong> </p>
+            <p><center>Confidence interval for %90 confidence level is: <strong>47.548< μ < 52.452 </strong></center></p>
+            <p>Solution b) x̄-[(Zα/2)x(σ/√n)]< μ < x̄+[(Zα/2) x (σ/√n)] ==> <strong>50-[(1.96)x(10/√45)] < μ < 50+[(1.96)x(10/√45)] </strong> </p>
+            <p><center>Confidence interval for %95 confidence level is: <strong>47.079< μ < 52.921 </strong></center></p>
+            <h3 class="hred">2.2-)Population mean interval for <strong>unknown</strong> population variance and sample size(n)< 30</h3>
+            <p>Confidence interval formula: <strong> x̄-e < μ < x̄+e </strong></p>
+            <p>Error(e) formula= <strong> tα/2 x s/√n</strong></p>
+            <p>For this calculation we will differ than other two by using t-statistic.I haven't show how to use t-table so you may need to look up for it in order to do the calculations on your own.</p>
+            <p>So confidence interval formula is= <strong>x̄-(tα/2 x s/√n)< μ < x̄+(tα/2 x s/√n) </strong></p>
+            <p class="h3black">In a sample taken from 10 houses in a neighborhood, yearly average income is 50k dollars.If the sample standard deviation is 5k dollars, find the neighborhoods confidence interval for;</p>
+            <p>a) %90 confidene level</p>
+            <p>b) %95 confidence level</p>
+            <p><center>_|n=10|_|x̄=50_|s=5_|α0.1=t0,05(v=9)=1.833|_|α0.5=t0.025(v=9)=2.262|_</center></p>
+            <p>Solution a) x̄-[(tα/2)x(s/√n)]< μ < x̄+[(tα/2) x (s/√n)] ==> <strong>50-[(1.833)x(5/√10)] < μ < 50+[(1.833)x(5/√10)] </strong> </p>
+            <p><center>Confidence interval for %90 confidence level is: <strong>47.102< μ < 52.898 </strong></center></p>
+            <p>Solution b) x̄-[(tα/2)x(s/√n)]< μ < x̄+[(tα/2) x (s/√n)] ==> <strong>50-[(2.262)x(5/√10)] < μ < 50+[(2.262)x(5/√10)] </strong> </p>
+            <p><center>Confidence interval for %95 confidence level is: <strong>46.424< μ < 53.576 </strong></center></p>
+        </div>
+
+        <div class="blackground">
+            <h2 class="h3black">What is Hypothesis Testing?</h2>
+            <p>Goal of hypothesis testing is to determine whether a claim about the population parameter is true or not by using sample data.So we have two hypotheses to try on every claim;</p>
+            <p><strong>H0(Null Hyphotesis):</strong>Always claims that a parameter is equal(=) to a value.</p>
+            <p><strong>H1(Alternative Hypothesis):</strong>As you can understand from the name alternative, H1 says that the value H0 claims is not correct(!= , < , >).</p>
+            <p>Generally our goal is to accept H1 while building a hypotesis.If we can't accept H1 we can build and try new hypothesis with new H0 and H1.</p>
+            <p>The parameters that we built our hypothesis on always has to be a <strong>population</strong> parameter not sample. e.g;</p>
+            <p><center>_|μ(mu)=Population mean|_|σ(sigma)=Population std. dev.|_|p=Population proportion|_</center></p>
+            <p>There is two kinds of hyptoheses as; one tailed and two tailed. Two-tailed means there is an exact value claimed in hypothesis.In one-tailed hypothesis we look for more or less than a value.</p>
+            <p>Example Hypotheses:</p>
+            <p class="h3black">A school claims that the average grades of students are <strong>80</strong> out of 100.</p>
+            <img src="two_tail.png" alt=""width="150">
+            <p>This is a two-tailed hypothesis test.</p>
+            <p>H0: μ = 80</p>
+            <p>H1: μ != 80</p>
+            <p class="h3black">A biologist claims that humans and chimpanzees have <strong>more</strong> than %97 similarity in DNA.</p>
+            <img src="one_tail.png" alt=""width="150">
+            <p>This is a one-tailed and right-tailed hypothesis test.</p>
+            <p>H0: p = .97</p>
+            <p>H1: p > .97</p>
+            <h3 class="hred">Type-I and Type-II Error</h3>
+            <p>After we've built any hypothesis we can come down to two decision.One; we can reject H0, two; we can accept H0.But here is a question, either way, is there any possibility that our decision is wrong? Answer is of course, yes.</p>
+            <p>We can encounter 4 situations after we built our hypothesis.</p>
+            <ul>
+                <li>H0 is true and not rejected.(TRUE)</li>
+                <li>H0 is true but rejected.(Type-I Error)</li>
+                <li>H0 is false but not rejected.(Type-II Error))</li>
+                <li>H0 is false and rejected.(TRUE)</li>
+                
+            </ul>
+            <img src="h0.png" alt=""width="250" height="150">
+            <p>So we have seen the beta(β) sign first time that means Type-II Error.While the H0 is wrong, our possibility to reject it means the power of test.Formula for power of test is= 1-β</p>
+           <h3 class="hred">Hypothesis Testing for Population Proportion</h3>
+           <p>As we have seen in confidence intervals, every test has its own formula.Our formula for this kind of test statistic is;</p>
+           <p>Ztest= [(p̂-p)/((√p x (√1-√p))/√n)] </p> 
+           <img src="prop_z.png" alt=""width="250" height="100">
+           <p>__|p̂=sample proportion|___|p=population proportion|___|n=sample size|__</p>
+           <p class="h3black">A traffic engineer claims that male drivers causes %70 of highway traffic incidents.Out of 50 randomly selected incident, 33 has reported as caused by a male driver.
+            For α=.01 what is the test statistic and conclusion about this claim?
+           </p>
+           <p>For α=.01 our critic region value should be α/2 because this is a two-tailed test.So Z.005 values are our critic region values and that equals 2.575</p>
+           <p>Solution [(p̂-p)/((√p x (√1-√p))/√n)] if applied ==> [(.66-.7)/((√.7 x (√1-√.7))/√50)]= -1.951 </p>
+           <center><img src="zcrit.png" alt=""width="350" height="250"></center> 
+           <center><p><strong>-Zcritic < Ztest < Zcritic so we cannot reject H0 and we have to accept H0 for α=.01</strong></p></center>
         </div>
     </body>
 </html>
