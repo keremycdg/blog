@@ -1,0 +1,111 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Inferential Stats. Chapter-3)</title>
+        <link rel="stylesheet" href="../../../styles.css">
+    </head>
+
+    <body>
+        <div>
+            <p><a href="../../../index.html">Main Page</a></p>
+        </div>
+
+        <div class="edaabout">
+            <div>
+                <h2>Correlation and Regression</h2>
+            </div>
+        </div>
+
+        <div class="blackground">
+            <h2 class="h3black">What is Correlation?</h2>
+            <p>Correlation in statistics is a way to measure the relation between two variables in terms of numbers. e.g. Degree of atmospheric pressure is negatively correlated to current height spot.</p>
+            <p>Correlation can be positive, negative or zero between two variables and correlation should be between -1 and 1. As we can say that correlation is a metric that describes the strength of the relation, if the value gets closer to 1; that means the strong positive relation and if the value gets closer to -1; that means the strong negative relation. Before we can make correlational assumptions we first need to explore most common technique developed by Karl Pearson. Below we will explore how to calculate <i>correlation coefficient</i> and conditions to provide while using.</p>
+        
+        
+        
+            <h3 class="hred">Pearson's Correlation Coefficient</h3>
+            <div class="container1">
+                
+                <center><img src="coefficient_formula.jpg" alt=""width="300" height="150"></center>
+                <center><img src="formula1.jpg" alt=""width="300" height="150"></center>
+                <center><img src="pearson.jpg" alt=""width="300" height="150"></center>
+                
+            </div>
+            <center><p> <strong> All three formulas mean the Pearson's Correlation Coefficient(r).</strong></p></center>
+            <div class="container1">
+                <ul>
+                    <li>r= Correlation Coefficient</li>
+                    <li>n= Number of total observations</li>
+                    <li>x= Value on the x-axis</li>
+                    <li>y= Value on the y-axis</li>
+                </ul>
+                <ul>
+                    <li>x̄= Sample mean of x for given n value</li>
+                    <li>ȳ= Sample mean of y for given n value</li>
+                </ul>
+            </div>
+            <p>For a given dataset(or sample) we can use the formula to calculate the Pearson's Coefficient and we can see the relationship between two variables.Let's explore below dataset that includes the variables as x and y.</p>
+            <center><img src="data_.jpg" alt=""width="300" height="250"></center>
+            <p>With applying above dataset to formulas we find the Pearson's Correlation Coefficient(r) as;</p>
+            <div class="container1">
+                
+                
+                <center><img src="formula2.jpg" alt=""width="300" height="150"></center>
+                <center><img src="formula3.jpg" alt=""width="300" height="150"></center>
+                
+            </div>
+            <h3 class="hred">When and how to use Correlation Coefficient?</h3>
+            <div class="container1">
+                <ul>
+                    <li>First thing to know is correlation coefficient can be used as en estimate of relation between variables. With saying that, more data you have more accurate relations you can find. e.g. The same r=-0.74 point should be more powerful with 10.000 samples than 10 samples. The trick here is the lower p-value. The lower p-value in the dataset helps to make relatively more accurate estimations about relations.</li>
+                    <li>Correlation is calculated between two variables.</li>
+                    <li>Don't use Pearson's Correlation if there's a non-linear relationship.</li>
+                    <li>Pearson's Correlation is only sensitive to non-outlier normally distributed data.</li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div class="blackground">
+            <h2 class="h3black">What is Regression?</h2>
+            <p>Regression Analysis is basically using <i>independent variables(X,X1,X2..)</i> to explain the changes in the <i>dependent variable(Y)</i>. Regression Analysis can be named as the Foundation of Machine Learning Techniques because we can make <i>predictions</i> of the target variable(Y) for the given data points(X,X1,X2..) using Regression.</p>
+            <p>Simplest form of Regression is the Linear Regression. As it can be understood from the name, it is actually fitting a "line" to the 2 dimensions(x,y) Cartesian coordinate system. The technique is called Least Squares Residual.</p>
+            
+            <div class="container1">
+            <center><img src="data_regression.jpg" alt=""width="350" height="250"></center>
+            <p>Here is a sample data with the mean y value is 13.875</p>
+            </div>
+
+            <p>Since the definition of Linear Regression is basically explaining the variance with independent variables, firstly let's explore the variance around mean.</p>
+            
+            <div class="container1">
+                <center><img src="plot_errors.jpg" alt=""width="350" height="250"></center>
+                <ul>
+                    <li><p>The line seen in the plot is the mean y value(13.875), and we are seeing the variance around the mean. If any line that fits data with smaller errors, that will be the "best fit" for our problem.</p></li>
+                    <li><p>For Linear Regression problem; as we are going to fit a line, there is a line formula that "everybody" knows: <strong><i>y=aX+b</i></strong> </p></li>
+                    <li>There is a derivative calculation for the best fit line, but computers are here for that. The things we should learn is what is the slope and the coefficient in the linear regression formula.</li>
+                    <li>a is the <i>slope</i> of the line. b is the <i>coefficient</i>(the point where the line intersects the y-axis)</li>
+                </ul>
+            </div>
+
+            <div class="container1">
+                <center><img src="regression.jpg" alt=""width="350" height="250"></center>
+                <ul>
+                    <li>As seen on the plot, after the least squares calculation this line is the best fit for the dataset. The formula of the line is <strong><i>0.98586X+5.37194</i></strong></li>
+                    <li>From this <a href="https://www.socscistatistics.com/tests/regression/default.aspx">link</a> you can make a Linear Regression model with your own dataset and try it for yourself.</li>
+                </ul>
+            </div>
+        
+        
+        
+        </div>
+
+        <div class="container">
+            <a href="https://twitter.com/krmycdg" target="_blank">My Twitter Account<img src="../../../twitter.png" style="width: 42px;height42px;"></a>
+            <a href="https://github.com/keremycdg" target="_blank">My Github Account<img src="../../../github.png" style="width: 42px;height42px;"></a>
+            <a href="https://tr.linkedin.com/in/mustafa-kerem-y%C3%BCceda%C4%9F-9865b3200" target="_blank">My LinkedIn Account<img src="../../../in.png" style="width: 42px;height42px;"></a>
+        </div>
+    
+    </body>
+
+</html>
